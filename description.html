@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description</title>
+    <link href="description.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Oxygen&family=Poppins:wght@700&family=Roboto:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap" rel="stylesheet">
+     
+    <!----Font Awesome ----->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script src="fontawesome-free-6.1.1-web/js/all.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/playa.png" />
+        <summary> Tu hotel</summary>
+    </header>
+    <main>
+        <section id="sectionDescription">
+
+        </section>
+        <section id="comments">
+
+        </section>
+        <form onsubmit="dejarcomentario(event)">
+            <h3>Deja tu Comentario</h3>
+            <label>
+                Titulo
+                <input type="text" id="titlecoment" name="titlecoemnt" />
+            </label>
+            <p>Rating <input id="rating"  type="number" name="rating" min="1" max="5"></p>
+            <textarea id="comentarioCompleto" value="comentarioCompleto" name="comentarioCompleto" rows="6" cols="90"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </main>
+    <footer>
+        
+    </footer>
+    
+</body>
+<script src="./description.js"></script>
+</html>
