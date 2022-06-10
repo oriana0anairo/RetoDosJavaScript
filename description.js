@@ -78,7 +78,14 @@ const mostrarDatacomments = (datacomments) => {
 
 function dejarcomentario(event) {
 
+
+
     event.preventDefault();
+
+
+        const allbody = document.getElementById("allbody");
+        allbody.style.display="block";
+
     const titulocomentario = document.getElementById('titlecoment').value;
     const clalificacioncomentario = document.getElementById('rating').value;
     const comentario = document.getElementById("comentarioCompleto").value;
@@ -112,7 +119,7 @@ function dejarcomentario(event) {
         .then(data => {
            // console.log(data) // JSON data parsed by `data.json()` call
            creandoComentarios (data.title, data.description, data.rating);
-             
+           allbody.style.display="none";
         });
 
 
